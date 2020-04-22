@@ -12,12 +12,11 @@ def julian_date(day,month,year):
         days_pass+=month
     days_pass+=day
     return(days_pass)
-julian_date(10,10,2000)
 
 # %%
 print('_________________    Ex 5    ______2______ ')
 def pos(n):
-    for i in range(n):
+    for i in range(n+1):
         print(i)
 
 # %%
@@ -33,12 +32,11 @@ print('_________________    Ex 5    ______4_____ ')
 def prime(num):
     if num > 1: 
         for i in range(2, num//2): 
-    
             if (num % i) == 0: 
-                print(num, "is not a prime number") 
+                return("is not a prime number") 
                 break
         else: 
-            print(num, "is a prime number") 
+            return("is a prime number") 
         
     else: 
-        print(num, "is not a prime number")
+        return ("is not a prime number")
